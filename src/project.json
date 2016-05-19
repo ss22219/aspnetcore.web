@@ -1,13 +1,18 @@
 {
   "version": "1.0.0-*",
+  "webroot": "wwwroot",
   "buildOptions": {
-    "emitEntryPoint": true
+    "emitEntryPoint": true,
+    "preserveCompilationContext": true,
+    "outputName" : "AspNetCore.Web"
   },
   "dependencies": {
     "Microsoft.NETCore.App": {
       "type": "platform",
       "version": "1.0.0-rc2-3002702"
-    }
+    },
+    "Microsoft.AspNetCore.Server.Kestrel": "1.0.0-*",
+    "Microsoft.AspNetCore.StaticFiles": "1.0.0-*"
   },
   "frameworks": {
     "netcoreapp1.0": {
